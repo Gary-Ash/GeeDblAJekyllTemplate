@@ -8,12 +8,8 @@ mastodon_username: GaryAsh
 
 url: ""
 baseurl: ""
-permalink: posts/:year-:month-:day-:title.html
 encoding: "UTF-8"
 markdown: kramdown
-
-redcarpet:
-  extension: ["smart"]
 
 highlighter: rouge
 lsi: false
@@ -51,25 +47,15 @@ exclude:
 
 collections:
   blog:
-    output: true
-    permalink: /blog/:path/
+    output: false
 
   product:
-    output: true
-    permalink: /products/:path/
-
-autopages:
-  enabled: true
-
-  categories:
-    layouts:
-      - blog-post.html
-    enabled: true
+    output: false
 
 pagination:
   enabled: true
   per_page: 1
-  permalink: '/page/:num/'
+  permalink: index-:num.html
   title: ' - page :num'
   limit: 0
   sort_field: 'date'
