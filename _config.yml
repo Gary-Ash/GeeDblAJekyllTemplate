@@ -49,7 +49,7 @@ collections:
   blog:
     output: false
 
-  product:
+  products:
     output: false
 
 pagination:
